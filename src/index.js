@@ -1,13 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import './index.scss';
 import reportWebVitals from './reportWebVitals';
+import Centralized from './pages/Centralized';
+import Home from './pages/Home'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Routes
+} from "react-router-dom";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    <Router>
+      <Routes>
+        <Route path="/centralized" element={<Centralized />} />
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </Router>
+  </React.StrictMode >,
   document.getElementById('root')
 );
 
