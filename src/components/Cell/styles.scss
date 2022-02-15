@@ -1,0 +1,13 @@
+.cell-wrapper{
+    min-width: 1.5rem;
+    min-height: 1.5rem;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+}
+.cell-wrapper:hover{
+    background-color: rgba(0, 0, 0, 0.568) !important;
+}
+
+.cell-wrapper:last-child{
+    border-right: 1px solid black;
+}
